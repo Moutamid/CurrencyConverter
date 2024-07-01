@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Currency Converter</string>
-    <string name="BANNER_ID">ca-app-pub-3940256099942544/9214589741</string>
-    <string name="Interstitial_ID">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="app_name">Currency Chart by Corrine</string>
+    <string name="BANNER_ID">ca-app-pub-6575842518352598/6005484923</string>
+    <string name="Interstitial_ID">ca-app-pub-6575842518352598/3736197191</string>
 
     <string-array name="world_currencies">
         <item>AED</item>

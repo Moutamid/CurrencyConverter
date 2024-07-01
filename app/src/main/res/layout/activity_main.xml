@@ -77,12 +77,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/convert"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:cardCornerRadius="12dp"
                 android:layout_marginStart="5dp"
-                app:cardBackgroundColor="#009688"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/green"
                 app:strokeWidth="0dp"
                 app:cardElevation="0dp">
 
@@ -98,10 +98,22 @@
 
         </LinearLayout>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textSize="18sp"
+            app:icon="@drawable/change"
+            app:backgroundTint="@color/green"
+            app:cornerRadius="12dp"
+            android:layout_marginHorizontal="12dp" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/currencyRate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
             tools:listitem="@layout/currency"/>
 
     </LinearLayout>

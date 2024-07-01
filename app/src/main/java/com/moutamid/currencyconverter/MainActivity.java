@@ -34,6 +34,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
@@ -196,7 +197,9 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 1; i <= 40; i++) {
             int baseAmount = i * 100;
             double convertedAmount = baseAmount * value;
-            list.add(new CurrencyModel(String.format("%,d.00", baseAmount), String.format("%.2f", convertedAmount)));
+            String base = binding.base.getEditText().getText().toString().toUpperCase(Locale.ROOT) + " " + String.format(Locale.getDefault(),"%,d.00", baseAmount);
+            String convert = binding.convertTo.getEditText().getText().toString().toUpperCase(Locale.ROOT) + " " + String.format(Locale.getDefault(),"%,.2f", convertedAmount);
+            list.add(new CurrencyModel(base, convert));
         }
         CurrencyAdapter adapter = new CurrencyAdapter(this, list);
         binding.currencyRate.setAdapter(adapter);

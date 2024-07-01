@@ -16,7 +16,7 @@ import java.net.URL;
 public class Constants {
 
     public static String api(String base, String convertTo) {
-        return "https://api.currencyapi.com/v3/latest?apikey=cur_live_9GGhhN5Xw8xQZLf6j4hM7D06ga1PVIJYmMmULPYW&base_currency=" + base + "&currencies=" + convertTo;
+        return "https://api.currencyapi.com/v3/latest?apikey=cur_live_fgYUUoq4LBs9QEyJBf4QhaqY7hlcjsJFfwvhEpZK&base_currency=" + base + "&currencies=" + convertTo;
     }
 
     public static void checkApp(Activity activity) {
